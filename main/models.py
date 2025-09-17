@@ -1,7 +1,9 @@
 import uuid
+from django.contrib.auth.models import User
 from django.db import models
 
 class News(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     CATEGORY_CHOICES = [
         ('transfer', 'Transfer'),
         ('update', 'Update'),

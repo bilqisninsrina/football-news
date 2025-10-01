@@ -70,6 +70,13 @@
         <a href="{% url 'main:show_news' news.id %}" class="text-green-600 hover:text-green-700 font-medium text-sm transition-colors">
           Read more →
         </a>
+
+        <button
+          onclick="showToast('Sample Title', 'This is a sample message for the toast notification.')"
+        >
+          Click to Show Toast
+        </button>
+
       </div>
     {% endif %}
   </div>
